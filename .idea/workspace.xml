@@ -21,16 +21,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="js" value="4" />
           <entry key="json" value="2" />
+          <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="4" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -38,13 +39,14 @@
           <entry key="gitignore" value="6" />
           <entry key="js" value="971" />
           <entry key="json" value="8" />
+          <entry key="md" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="8" />
           <entry key="JavaScript" value="971" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="57" />
         </counts>
       </usages-collector>
     </session>
@@ -160,6 +162,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$USER_HOME$/my-react-app/.gitignore" />
         <option value="$USER_HOME$/my-react-app/package.json" />
+        <option value="$USER_HOME$/my-react-app/README.md" />
       </list>
     </option>
   </component>
@@ -268,12 +271,12 @@
       <workItem from="1528947880013" duration="4141000" />
       <workItem from="1533021595609" duration="1196000" />
       <workItem from="1533094475382" duration="2068000" />
-      <workItem from="1533168992571" duration="2470000" />
+      <workItem from="1533168992571" duration="2909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9875000" />
+    <option name="totallyTimeSpent" value="10314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -300,6 +303,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -392,6 +398,13 @@
             <element signature="e#0#25#0" expanded="true" />
             <element signature="e#95#149#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/my-react-app/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
