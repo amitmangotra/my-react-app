@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 import ModuleListItemStateless from '../components/ModuleListItem'
-import AddComponent from '../components/AddComponent'
 
 export default class ModuleList extends Component {
     constructor() {
         super();
         this.state = {
-            title: '',
+            title: 'dummy value',
             modules: [
                 {title: "Module 1"},
                 {title: "Module 2"},
@@ -17,7 +16,22 @@ export default class ModuleList extends Component {
             ]
         }
 
+        this.inputTitle = this.inputTitle.bind(this)
+
     }
+
+    inputTitle(event) {
+        this.setState({title: event.target.value})
+    }
+
+    createModule = () => {
+        console.log(this.state.title)
+        console.log(this.state.modules)
+        var newModule = {title: this.state.title}
+        this.state.modules.push(newModule)
+        this.setState({"modules": this.state.modules})
+    }
+
     renderModuleList = () => {
         return (
             this.state.modules.map((module, i) =>
@@ -29,7 +43,16 @@ export default class ModuleList extends Component {
     render() {
         return(
             <div>
-                <AddComponent/>
+                <div className="input-group">
+                    <input className="form-control"
+                           placeholder="Enter title here"
+                           onChange={this.inputTitle}
+                           style={{marginRight: "5px"}}/>
+                    <button className="btn btn-primary"
+                            onClick={this.createModule}>
+                        <i className="fa fa-plus"></i>
+                    </button>
+                </div>
                 <br/>
                 <ul className="list-group">
                     {this.renderModuleList()}
