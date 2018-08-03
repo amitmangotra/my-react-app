@@ -1,24 +1,25 @@
 import React, {Component} from 'react'
 import CourseCard from '../components/CourseCard'
-import ModuleList from './ModuleList'
-import LessonTabs from './LessonTabs'
 import CourseEditor from './CourseEditor'
 
 export default class CourseManager extends Component {
     render() {
         return (
-            <div className="container-fluid">
-                <h1>Course Manager</h1>
-                <CourseEditor/>
-                <LessonTabs/>
-                <ModuleList/>
-                <div className="card-deck">
-                    <CourseCard/>
-                    <CourseCard/>
-                    <CourseCard/>
-                    <CourseCard/>
+            <div>
+                <nav className="navbar navbar-dark bg-dark">
+                    <a className="navbar-brand" href="#">Course Manager</a>
+                </nav>
+                <div className="container-fluid">
+                    <CourseEditor/>
+                    <div className="card-deck">
+                        <CourseCard/>
+                        <CourseCard/>
+                        <CourseCard/>
+                        <CourseCard/>
+                    </div>
                 </div>
             </div>
+
         )
     }
 };
