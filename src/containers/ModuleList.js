@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import ModuleListItem from '../components/ModuleListItem'
+import ModuleListItemStateless from '../components/ModuleListItem'
 import AddComponent from '../components/AddComponent'
 
 export default class ModuleList extends Component {
@@ -20,7 +20,9 @@ export default class ModuleList extends Component {
     }
     renderModuleList = () => {
         return (
-            this.state.modules.map((module, i) => <ModuleListItem key={i} title={module.title}/>)
+            this.state.modules.map((module, i) =>
+                <ModuleListItemStateless key={i}
+                                         title={module.title}/>)
         )
     }
 
